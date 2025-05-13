@@ -3,6 +3,10 @@ import { FaTwitter, FaInstagram, FaDiscord, FaFacebookF, FaReddit } from "react-
 
 import "./Footer.css"
 
+import arcade from "../../assets/arcade.png"
+import horse from "../../assets/horse.png"
+import good from "../../assets/good.webp"
+
 const Footer = () => {
     return (
 
@@ -29,9 +33,9 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="footerImgs">
-                                <img src="src\assets\arcade.png" />
-                                <img src="src\assets\horse.png" />
-                                <img src="src\assets\good.webp" />
+                                <img src={arcade} />
+                                <img src={horse} />
+                                <img src={good} />
                             </div>
                         </div>
 

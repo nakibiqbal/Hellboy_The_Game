@@ -6,6 +6,13 @@ import useScreenSize from "../../Others/UseScreenSize/useScreenSize";
 import useScrollTransform from "../../Others/UseScrollTransform/useScrollTransform";
 import useHoverEffect from "../../Others/UseHoverEffect/useHoverEffect";
 
+import image5 from "../../assets/image5.jpg";
+import image9 from "../../assets/image9.png";
+import image10 from "../../assets/image10.png";
+import fox from "../../assets/fox.webp";
+import gol from "../../assets/gol.webp";
+import crown from "../../assets/crown.webp";
+
 const StickySection = () => {
     const stickySection = useRef(null);
     const isLargeScreen = useScreenSize()
@@ -19,22 +26,21 @@ const StickySection = () => {
             ? { y: yTransform, transition: "all 1.5s cubic-bezier(0.22, 1, 0.36, 1)" }
             : {};  // Empty styles for small screens
     };
-
     const dynamicCommonText = [
         {
-            src: "src/assets/image5.jpg",
+            src: image5,
             heading2: "Authentic",
             paragraph: "A graphical style that evokes the original art style of the comics and makes every moment of the game look - and feel - like it was ripped straight from the comic books.",
             id: 1
         },
         {
-            src: "src/assets/image9.png",
+            src: image9,
             heading2: "Fight like Hellboy",
             paragraph: "Chain together hard-hitting melee and ranged attacks to fight a diverse array of increasingly nightmarish enemies.",
             id: 2
         },
         {
-            src: "src/assets/image10.png",
+            src: image10,
             heading2: "A true Hellboy story",
             paragraph: "A narrative true to the spirit of the comics, tying together several independent stories into one unified Hellboy experience.",
             id: 3
@@ -56,7 +62,7 @@ const StickySection = () => {
                             whileInView={{ filter: "brightness(1)" }}
                             viewport={{ once: true }}
                             transition={{ duration: 3, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                            src="src/assets/fox.webp" />
+                            src={fox} />
                     </div>
                     <div className="foxCircleContent2 animatable">
                         <motion.img
@@ -64,14 +70,14 @@ const StickySection = () => {
                             whileInView={{ filter: "blur(0px)" }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                            src="src/assets/gol.webp" />
+                            src={gol} />
                     </div>
                 </div>
             </div>
             <div className="stickyContent">
                 <div className="commonText2">
                     <CommonText2
-                        src="src/assets/crown.webp"
+                        src={crown}
                         className="uniq"
                         heading="An Original Hellboy B.P.R.D. story"
                         paragraph="Developed by Upstream Arcade, Hellboy: Web of Wyrd is an original story created in partnership with Dark Horse Comics and creator Mike Mignola. Like the comics, the game sends Hellboy on a series of vastly different and wholly unique adventures; and while those stories stand on their own, they are all tied to the mysterious legacy of The Butterfly House."

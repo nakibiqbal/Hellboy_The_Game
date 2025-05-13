@@ -1,6 +1,11 @@
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import "./SecondSection.css";
+
+import shadow from "../../assets/shadow.webp"
+import secondBg from "../../assets/secondBg.png"
+import boy from "../../assets/boy.webp"
+
 import CommonDiv from "../../Others/CommonDiv/CommonDiv";
 import CommonText from "../../Others/CommonText/CommonText";
 import useScreenSize from "../../Others/UseScreenSize/useScreenSize";
@@ -25,14 +30,14 @@ const SecondSection = () => {
                 <CommonDiv
                     style={getDynamicStyle(400, -400)}
                     className="one"
-                    src="src/assets/shadow.webp"
+                    src={shadow}
                     span="A"
                     head1="ncient evil lives"
                     head2="in the Wyrd"
                 />
             </div>
             {/* Background Image */}
-            <img className="sec2bg" src="src/assets/secondBg.png" alt="Background" />
+            <img className="sec2bg" src={secondBg} alt="Background" />
 
             <div className="two2">
                 <CommonDiv
@@ -54,7 +59,7 @@ const SecondSection = () => {
                 <motion.img
                     style={getDynamicStyle(100, -300)}
                     className="boy"
-                    src="src/assets/boy.webp"
+                    src={boy}
                     alt="Boy"
                 />
             </div>

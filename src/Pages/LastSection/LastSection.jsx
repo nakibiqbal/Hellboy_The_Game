@@ -2,6 +2,10 @@ import useScreenSize from '../../Others/UseScreenSize/useScreenSize'
 import './LastSection.css'
 import { motion } from 'framer-motion'
 
+import hellLast from "../../assets/hellLast.webp"
+import gotoHell from "../../assets/gotoHell.webp"
+import hellBoyImg from "../../assets/hellboyImage.png"
+
 const LastSection = () => {
     const isLargeScreen = useScreenSize()
 
@@ -37,13 +41,13 @@ const LastSection = () => {
             >
                 <div className="last1">
                     <div className="lastImg1 animate">
-                        <img src="src\assets\hellLast.webp" />
+                        <img src={hellLast} />
                     </div>
                     <div className="lastImg2 animate">
-                        <img src="src\assets\gotoHell.webp" />
+                        <img src={gotoHell} />
                     </div>
                 </div>
-                <img className='lastHellBoy' src="src\assets\hellboyImage.png" />
+                <img className='lastHellBoy' src={hellBoyImg} />
             </motion.div>
         </section>
     )

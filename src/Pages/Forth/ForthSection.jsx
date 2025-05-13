@@ -7,6 +7,16 @@ import CommonText2 from "../../Others/CommonText2/CommonText2"
 import useScreenSize from "../../Others/UseScreenSize/useScreenSize"
 import useScrollTransform from "../../Others/UseScrollTransform/useScrollTransform"
 
+import shadow from "../../assets/shadow.webp"
+import leaf from "../../assets/leaf.webp"
+import pathor from "../../assets/pathor.webp"
+import fara from "../../assets/fara.webp"
+import gach from "../../assets/gach.webp"
+import img1 from "../../assets/img1.webp"
+import crap from "../../assets/crap.webp"
+import forthHell from "../../assets/forthHell.webp"
+import hand from "../../assets/hand.webp"
+
 const ForthSection = () => {
     const isLargeScreen = useScreenSize()
     const forthSection = useRef(null);
@@ -27,24 +37,24 @@ const ForthSection = () => {
             {/* leftContent */}
             <div className="img3">
                 <motion.div style={getDynamicStyle(400, -300)} className="divLeaf">
-                    <CommonDiv src="src/assets/shadow.webp" className="five" span="U" head1="ncover" head2={head2} />
-                    <img className="leaf" src="src\assets\leaf.webp" />
+                    <CommonDiv src={shadow} className="five" span="U" head1="ncover" head2={head2} />
+                    <img className="leaf" src={leaf} />
                 </motion.div>
             </div>
 
             <div className="middleC">
                 <CommonText style={getDynamicStyle(400, -300)} className="mystery" text="MYSTERY!!" />
                 <motion.div className="pathorDiv" style={getDynamicStyle(1100, -1100)}>
-                    <img className="pathor" src="src\assets\pathor.webp" />
+                    <img className="pathor" src={pathor} />
                 </motion.div>
                 <motion.div className="leftImgWrapper" style={getDynamicStyle(200, -100)} >
-                    <img className="fara" src="src\assets\fara.webp" />
-                    <img className="gach" src="src\assets\gach.webp" />
-                    <motion.img initial={{ filter: "blur(10px)" }} viewport={{ once: true }} whileInView={{ filter: "blur(0)" }} transition={{ duration: 1, ease: "all 0.5s cubic-bezier(0.22, 1, 0.36, 1)" }} className="crap" src="src\assets\crap.webp" />
+                    <img className="fara" src={fara} />
+                    <img className="gach" src={gach} />
+                    <motion.img initial={{ filter: "blur(10px)" }} viewport={{ once: true }} whileInView={{ filter: "blur(0)" }} transition={{ duration: 1, ease: "all 0.5s cubic-bezier(0.22, 1, 0.36, 1)" }} className="crap" src={crap} />
                 </motion.div>
-                <motion.img initial={{ filter: "sepia(1) blur(10px)" }} transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }} viewport={{ once: true }} whileInView={{ filter: "sepia(0) blur(0px)" }} style={getDynamicStyle(400, -300)} className="forthHell" src="src\assets\forthHell.webp" />
+                <motion.img initial={{ filter: "sepia(1) blur(10px)" }} transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }} viewport={{ once: true }} whileInView={{ filter: "sepia(0) blur(0px)" }} style={getDynamicStyle(400, -300)} className="forthHell" src={forthHell} />
                 <motion.div style={getDynamicStyle(-50, 200)}>
-                    <img className="img1" src="src\assets\img1.webp" />
+                    <img className="img1" src={img1} />
                 </motion.div>
             </div>
 
@@ -63,7 +73,7 @@ const ForthSection = () => {
                 whileInView={{ filter: "blur(0px)" }}
                 transition={{ duration: 0.6, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
                 viewport={{ once: true }}
-                style={getDynamicStyle(-400, 0)} className="hand" src="src\assets\hand.webp" />
+                style={getDynamicStyle(-400, 0)} className="hand" src={hand} />
         </section>
 
     )

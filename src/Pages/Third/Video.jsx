@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Video.css";
+import videoBg from "../../assets/videoBg.png"
+import button from "../../assets/button.png"
 import Button from "../../Others/Buttons.jsx/Button";
 
 const Video = () => {
@@ -21,7 +23,7 @@ const Video = () => {
     return (
         <section
             id="videoSection">
-            <img src="src/assets/videoBg.png" className="videoBorder" alt="Video Border" />
+            <img src={videoBg} className="videoBorder" alt="Video Border" />
 
             {/* Always render the iframe */}
             <iframe
@@ -34,7 +36,7 @@ const Video = () => {
             ></iframe>
 
             {/* Button */}
-            <Button src="src\assets\button.png" btnText="WATCH TRAILER" videoBtn="videoBtn" onClick={handlePlayVideo} pointerEvents={pointerEvents} opacity={opacity} />
+            <Button src={button} btnText="WATCH TRAILER" videoBtn="videoBtn" onClick={handlePlayVideo} pointerEvents={pointerEvents} opacity={opacity} />
         </section>
     );
 };

@@ -1,5 +1,4 @@
 #homeSection {
-  background-image: url(src/assets/homeImage.jpg);
   width: 100%;
   height: 100vh;
   background-position: center center;
@@ -54,7 +53,6 @@ img.hellBoy {
 }
 
 .scroll {
-  background-image: url(src/assets/circle.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -85,7 +83,6 @@ img.hellBoy {
 }
 @media (max-width: 990px) {
   #homeSection {
-    background-image: url(src/assets/boymob.png);
     box-shadow: none;
     background-position-y: 0rem;
     height: 60rem;

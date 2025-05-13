@@ -2,23 +2,38 @@ import CommonText from "../../Others/CommonText/CommonText";
 import "./Images.css";
 import { motion } from "framer-motion";
 
+// Import images statically with updated paths
+import image1 from "../../assets/image1.jpg";
+import image2 from "../../assets/image2.jpg";
+import image3 from "../../assets/image3.jpg";
+import image4 from "../../assets/image4.jpg";
+import image5 from "../../assets/image5.jpg";
+import image6 from "../../assets/image6.jpg";
+import image7 from "../../assets/image7.jpg";
+import image8 from "../../assets/image8.jpg";
+
+import dot from "../../assets/dot.webp";
+import now from "../../assets/now.webp";
+import and from "../../assets/and.webp";
+import anotherFara from "../../assets/anotheFara.webp";
+
 const Images = () => {
     const images = [
-        { images: "src/assets/image1.jpg", id: 1 },
-        { images: "src/assets/image2.jpg", id: 2 },
-        { images: "src/assets/image3.jpg", id: 3 },
-        { images: "src/assets/image4.jpg", id: 4 },
-        { images: "src/assets/image5.jpg", id: 5 },
-        { images: "src/assets/image6.jpg", id: 6 },
-        { images: "src/assets/image7.jpg", id: 7 },
-        { images: "src/assets/image8.jpg", id: 8 },
+        { images: image1, id: 1 },
+        { images: image2, id: 2 },
+        { images: image3, id: 3 },
+        { images: image4, id: 4 },
+        { images: image5, id: 5 },
+        { images: image6, id: 6 },
+        { images: image7, id: 7 },
+        { images: image8, id: 8 },
     ];
     const abImages = [
-        { images: "src/assets/dot.webp", className: "dot", id: 1 },
-        { images: "src/assets/now.webp", className: "now", id: 2 },
-        { images: "src/assets/and.webp", className: "and", id: 3 },
-        { images: "src/assets/anotheFara.webp", className: "anotherFara", id: 4 }
-    ]
+        { images: dot, className: "dot", id: 1 },
+        { images: now, className: "now", id: 2 },
+        { images: and, className: "and", id: 3 },
+        { images: anotherFara, className: "anotherFara", id: 4 }
+    ];
 
     const handleMouseMove = (e, id) => {
         const target = e.target.closest(".images").querySelector("img");
@@ -30,7 +45,7 @@ const Images = () => {
 
     const handleMouseLeave = (e, id) => {
         const target = e.target.closest(".images").querySelector("img");
-        target.style.transform = `translate(0, 0) scale(${id === 5 ? 1.1 : 1}`;
+        target.style.transform = `translate(0, 0) scale(${id === 5 ? 1.1 : 1})`;
     };
 
     return (
@@ -61,8 +76,8 @@ const Images = () => {
             </div>
             <div className="absoluteStuffs">
                 {abImages.map(abImg => {
-                    const { images, className, id } = abImg
-                    return <img key={id} className={className} src={images} />
+                    const { images, className, id } = abImg;
+                    return <img key={id} className={className} src={images} />;
                 })}
             </div>
         </section>
