@@ -3,6 +3,9 @@ import { useState } from "react";
 
 import "./Navbar.css"
 
+import nav from "../../assets/nav.png"
+import closeBtn from "../../assets/closeBtn.png"
+
 const Navbar = () => {
     const [onClicked, setOnClicked] = useState(false);
     const x = onClicked ? 0 : -100;
@@ -11,7 +14,7 @@ const Navbar = () => {
 
     return (
         <>
-            <button className="navButton" onClick={() => setOnClicked(!onClicked)} ><img src="src\assets\nav.png" /></button>
+            <button className="navButton" onClick={() => setOnClicked(!onClicked)} ><img src={nav} /></button>
             <div style={{
                 filter: `blur(${blur}px)`,
                 transform: `translateX(${x}%)`,
@@ -20,7 +23,7 @@ const Navbar = () => {
                 visibility: visibility
             }}
                 className="navMobWrapper">
-                <button className="navButton" onClick={() => setOnClicked(!onClicked)} ><img src="src\assets\closeBtn.png" /></button>
+                <button className="navButton" onClick={() => setOnClicked(!onClicked)} ><img src={closeBtn} /></button>
 
                 <div className="navLeft">
                     <div className="wishlist">
