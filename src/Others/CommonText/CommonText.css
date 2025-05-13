@@ -1,0 +1,77 @@
+.out {
+  display: flex;
+  z-index: 99;
+  transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg) translate(-17%, 30%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.out h2:nth-child(1) {
+  z-index: 9;
+  margin-right: -0.7vw;
+}
+.out h2:nth-child(2) {
+  margin-top: 3vw;
+}
+.out h2:nth-child(3) {
+  margin-top: -2vw;
+}
+.out h2:nth-child(4) {
+  margin-top: 1vw;
+}
+.out h2 {
+  color: white;
+  font-size: 8vw;
+  font-family: arial black;
+  text-transform: uppercase;
+  letter-spacing: -20px;
+  -webkit-text-stroke: 4px black;
+}
+
+@media (max-width: 990px) {
+  .out {
+    transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg)
+      translate(-135%, -100%);
+  }
+  .out h2 {
+    font-size: 14vw;
+  }
+  .out h2:nth-child(1) {
+    margin-right: 0.3vw;
+  }
+}
+@media (max-width: 768px) {
+  .out {
+    transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg)
+      translate(-60%, -40%);
+  }
+
+  .out h2:nth-child(1) {
+    margin-right: 0.3vw;
+  }
+  .out h2 {
+    font-size: 14vw;
+  }
+}
+@media (max-width: 500px) {
+  .out h2:nth-child(1) {
+    margin-right: 1.3vw;
+  }
+  .out h2 {
+    font-size: 5rem;
+  }
+  .out h2:nth-child(2) {
+    margin-top: 6vw;
+  }
+  .out h2:nth-child(3) {
+    margin-top: -4vw;
+  }
+  .out h2:nth-child(4) {
+    margin-top: 2vw;
+  }
+  .out h2 {
+    letter-spacing: -20px;
+    font-weight: 900;
+    -webkit-text-stroke: 1px black;
+  }
+}

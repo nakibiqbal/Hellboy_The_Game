@@ -1,0 +1,86 @@
+section#joinSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #030708;
+  position: relative;
+}
+
+.joinContentWrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+.joinBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0rem 9.5rem;
+  position: relative;
+  z-index: 9;
+  margin-bottom: -21vw;
+}
+.zIndex {
+  z-index: 9;
+  position: relative;
+  padding-bottom: 1rem;
+}
+.joinImg {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  margin-left: -1vw;
+}
+.joinImg img {
+  width: 100%;
+}
+
+.rightShit {
+  width: 6vw;
+  z-index: 99;
+  object-fit: contain;
+  margin-top: -15vh;
+  margin-left: -1.2vw;
+}
+.leftShit {
+  object-fit: contain;
+  width: 4vw;
+  z-index: 99;
+  margin-top: 20vh;
+  margin-right: -0.9vw;
+}
+
+@media (max-width: 990px) {
+  .joinBtn {
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .leftShit {
+    object-fit: contain;
+    width: 10vw;
+    z-index: 99;
+    margin-top: 15vh;
+    margin-right: -3.9vw;
+  }
+  .rightShit {
+    width: 15vw;
+    z-index: 99;
+    object-fit: contain;
+    margin-top: -15vh;
+    margin-left: -4.2vw;
+  }
+  .joinImg {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .joinImg img {
+    width: 100%;
+    transform: scale(1.8);
+    margin-left: 35vw;
+  }
+}

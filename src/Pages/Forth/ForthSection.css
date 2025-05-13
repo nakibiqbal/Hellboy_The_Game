@@ -1,0 +1,248 @@
+section#forthSection {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0rem;
+  background: #030708;
+  flex-direction: column;
+  overflow: hidden;
+}
+.forthWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0rem 10rem;
+}
+.forthHell {
+  width: 50vw;
+  height: 35vw;
+  object-fit: cover;
+  margin-right: 8vw;
+}
+
+.divLeaf {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+img.leaf {
+  width: 24vw;
+  position: absolute;
+  height: 20vw;
+  top: 50%;
+  right: 0;
+  transform: translate(40%, -15%);
+}
+
+.mystery {
+  left: 0;
+  top: 50%;
+  transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg) translate(40%, -215%);
+}
+.mystery h2:nth-child(5) {
+  margin-top: -2vw;
+}
+.mystery h2:nth-child(6) {
+  margin-top: 2vw;
+}
+.mystery h2:nth-child(7) {
+  margin-top: 2vw;
+}
+.img3 {
+  position: relative;
+  width: 100%;
+  padding: 0rem 15rem;
+}
+.img1 {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  transform: translate(-320%, -110%);
+  width: 25vw;
+}
+.pathorDiv {
+  position: relative;
+  z-index: 9;
+}
+.pathor {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(40%, -85%);
+  width: 30vw;
+}
+img.fara {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -35%);
+  width: 50vw;
+}
+img.gach {
+  position: absolute;
+  width: 30vw;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, 10%);
+  filter: saturate(25) opacity(0.2) brightness(0.4) hue-rotate(10deg)
+    contrast(1.5);
+}
+img.crap {
+  position: absolute;
+  left: 50%;
+  transform: translate(490%, 315%);
+  top: 50%;
+  width: 5vw;
+}
+img.hand {
+  width: 8vw;
+  border-radius: 50%;
+  margin-top: 10vw;
+  animation: shadow 5s ease infinite;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0px 0px #0089a5;
+  }
+  50% {
+    box-shadow: 0 0 40px 0px #0089a5;
+  }
+  100% {
+    box-shadow: 0 0 0px 0px #0089a5;
+  }
+}
+.middleC {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.leftImgWrapper {
+  width: 100%;
+  position: relative;
+}
+
+@media (max-width: 990px) {
+  .img3 {
+    padding: 0rem 1rem;
+  }
+  .divLeaf {
+    margin-left: 0vw;
+    margin-bottom: 20vw;
+    justify-content: flex-start;
+  }
+  img.leaf {
+    width: 50vw;
+    transform: translate(0%, -90%);
+    height: 35vw;
+  }
+  .forthHell {
+    width: 75vw;
+    margin-bottom: -40vw;
+    height: 45vw;
+    margin-right: 0vw;
+  }
+  .mystery {
+    transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg)
+      translate(32%, -160%);
+  }
+
+  .img1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -70%);
+    width: 30vw;
+  }
+
+  .pathor {
+    transform: translate(10%, -50%);
+    width: 40vw;
+  }
+  .forthWrapper {
+    align-items: center;
+    margin-top: 70vw;
+  }
+
+  img.fara {
+    transform: translate(-5%, 5%);
+    width: 55vw;
+  }
+  img.gach {
+    width: 35vw;
+    transform: translate(-5%, 50%);
+    filter: saturate(0) opacity(0.3) brightness(1.5) hue-rotate(0deg)
+      contrast(1);
+  }
+  img.hand {
+    width: 15vw;
+    box-shadow: 0 0 40px 5px #0089a5;
+  }
+  img.crap {
+    transform: translate(270%, 280%);
+    width: 10vw;
+  }
+}
+@media (max-width: 768px) {
+  .forthWrapper {
+    padding: 0rem 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .mystery {
+    transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg)
+      translate(-50%, -160%);
+    gap: 10px;
+  }
+  .mystery h2 {
+    font-size: 4rem;
+  }
+  .forthWrapper {
+    padding: 0rem 1rem;
+  }
+  .forthHell {
+    width: 78vw;
+    margin-bottom: -25vw;
+    height: 50vw;
+  }
+  img.fara {
+    transform: translate(-10%, 5%);
+    width: 60vw;
+  }
+  img.gach {
+    width: 40vw;
+  }
+  img.crap {
+    transform: translate(200%, 200%);
+    width: 15vw;
+  }
+
+  img.hand {
+    width: 25vw;
+  }
+  .mystery {
+    left: 50%;
+    top: 50%;
+    transform: skew(-20deg, 0deg) rotate3d(1, 1, 1, 320deg)
+      translate(-43%, -220%);
+  }
+  .pathor {
+    transform: translate(30%, -15%);
+    width: 42vw;
+  }
+
+  .forthWrapper {
+    margin-top: 75vw;
+  }
+  img.hand {
+    margin-top: 15vw;
+  }
+}

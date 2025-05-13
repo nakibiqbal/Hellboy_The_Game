@@ -1,0 +1,40 @@
+#videoSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.video {
+  width: 70vw;
+  height: 40vw;
+  border-radius: 2rem;
+}
+.videoBorder {
+  width: 72vw;
+  height: 41vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.videoBtn {
+  position: absolute;
+}
+@media (max-width: 990px) {
+  .videoBtn {
+    display: none;
+  }
+  .video {
+    width: 80vw;
+    height: 50vw;
+    border-radius: 1rem;
+  }
+  .videoBorder {
+    width: 82vw;
+    height: 47vw;
+  }
+}

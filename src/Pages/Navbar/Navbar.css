@@ -1,0 +1,169 @@
+#navSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 3rem;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  box-shadow: inset 0px 30px 30px 0 black;
+}
+.navMobWrapper {
+  display: none;
+}
+.navWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLeft {
+  display: flex;
+  gap: 30px;
+}
+.navLeft a {
+  transition: all 0.3s linear;
+  position: relative;
+}
+.navLeft a::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: #a70a12;
+  bottom: -10px;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.5s cubic-bezier(0.5, 1, 0.89, 1);
+}
+.navLeft a:hover::before {
+  transform: scaleX(1);
+}
+.navLeft a:hover {
+  transform: translateY(-5px);
+  color: #ffe2a7;
+}
+.wishlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.div1,
+.div2 {
+  transition: all 0.3s ease-out;
+  opacity: 1;
+}
+.wishlist:hover {
+  .div1 {
+    transform: translate(-10px, 10px);
+    opacity: 0;
+  }
+  .div2 {
+    transform: translate(10px, -10px);
+    opacity: 0;
+  }
+}
+.wishlist div {
+  width: 8px;
+  height: 8px;
+  background: #a70a12;
+  rotate: 45deg;
+}
+.wishlist a {
+  color: #ffe2a7;
+}
+.navRight {
+  display: flex;
+  gap: 36px;
+}
+.navRight svg {
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.navRight svg:hover {
+  transform: translateY(-5px);
+  color: #ffe2a7;
+}
+.navButton {
+  display: none;
+}
+@media (max-width: 990px) {
+  #navSection {
+    visibility: hidden;
+  }
+  .navButton {
+    display: inline;
+    background: transparent;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid black;
+    z-index: 9999999;
+  }
+  .navButton img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .navMobWrapper {
+    background: black;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5rem 4rem;
+    gap: 4rem;
+    transition: all 1s cubic-bezier(0.5, 1, 0.89, 1);
+  }
+  .navLeft {
+    gap: 44px;
+    flex-direction: column;
+  }
+  .wishlist {
+    justify-content: flex-start;
+    margin-left: -24px;
+  }
+  .wishlist div {
+    width: 12px;
+    height: 12px;
+  }
+  a {
+    font-size: 20px;
+  }
+  .navRight {
+    gap: 48px;
+    flex-wrap: wrap;
+  }
+  .navRight svg {
+    font-size: 26px;
+  }
+  .navLeft a::before {
+    transform: scaleX(1);
+  }
+  .navLeft a:hover::before {
+    transform: scaleX(1);
+  }
+  .navLeft a:hover {
+    transform: translateY(0);
+  }
+  .wishlist:hover {
+    .div1 {
+      transform: translate(0);
+      opacity: 1;
+    }
+    .div2 {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+@import url("https://fonts.cdnfonts.com/css/adobe-garamond-pro-2");
+@import url("https://fonts.cdnfonts.com/css/reddit-sans");
+
+::-webkit-scrollbar {
+  background-color: black;
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  color: white;
+  font-family: "Adobe Garamond Pro", sans-serif;
+}
+a {
+  font-family: "Reddit Sans", sans-serif;
+  font-size: 17px;
+  color: white;
+  font-weight: 900;
+  text-decoration: none;
+  letter-spacing: -0.6px;
+}

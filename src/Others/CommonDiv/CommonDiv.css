@@ -1,0 +1,96 @@
+.ancient {
+  background: #baa891;
+  padding: 3vw 3vw 3vw 1vw;
+  position: relative;
+  overflow: hidden;
+  border: 5px solid black;
+  color: black;
+  position: relative;
+}
+.ancient h1 {
+  font-size: 3.5vw;
+  line-height: 4vw;
+}
+.ancient span {
+  font-size: 6vw;
+}
+.two {
+  margin-right: 14vw;
+  margin-top: -7vw;
+}
+.three {
+  margin-top: -22vw;
+  margin-left: -7vw;
+  z-index: 9;
+}
+.buttons {
+  display: flex;
+  gap: 50px;
+}
+
+@media (max-width: 990px) {
+  .ancient span {
+    font-size: 11vw;
+  }
+  .ancient {
+    padding: 3vw 4vw 5vw 2vw;
+  }
+  .ancient h1 {
+    font-size: 4.5vw;
+    line-height: 4vw;
+  }
+  .two {
+    margin-right: 0vw;
+    margin-top: 15vw;
+  }
+  .three {
+    margin-top: -18vw;
+    margin-left: -6vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .ancient {
+    padding: 4vw 5vw 6vw 3vw;
+  }
+  .ancient h1 {
+    font-size: 5.5vw;
+    line-height: 4vw;
+  }
+  .two {
+    margin-right: 27vw;
+    margin-top: 5vw;
+  }
+
+  .three {
+    margin-top: -32vw;
+    margin-left: -10vw;
+    margin-right: -4vw;
+  }
+}
+@media (max-width: 500px) {
+  .ancient {
+    padding: 2rem 1rem 0rem 1rem;
+  }
+  .ancient h1 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .two {
+    margin-right: 60vw;
+    margin-top: 10vw;
+  }
+
+  .three {
+    margin-top: -45vw;
+    margin-left: -40vw;
+    margin-right: -10vw;
+  }
+  .buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
