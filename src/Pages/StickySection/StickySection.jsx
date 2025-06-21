@@ -61,7 +61,7 @@ const StickySection = () => {
                             initial={{ filter: "brightness(0)" }}
                             whileInView={{ filter: "brightness(1)" }}
                             viewport={{ once: true }}
-                            transition={{ duration: 3, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                            transition={{ duration: 3, ease: "easeInOut" }}
                             src={fox}
                             loading="lazy"
                         />
@@ -71,7 +71,7 @@ const StickySection = () => {
                             initial={{ filter: "blur(10px)" }}
                             whileInView={{ filter: "blur(0px)" }}
                             viewport={{ once: true }}
-                            transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                            transition={{ duration: 1, ease: "easeInOut" }}
                             src={gol}
                             loading="lazy"
                         />
@@ -95,10 +95,10 @@ const StickySection = () => {
                         return (
                             <div key={id} className="stickytwos">
                                 <motion.img
-                                    initial={{ filter: "blur(10px) opacity(0)" }}
-                                    whileInView={{ filter: "blur(0px) opacity(1)" }}
+                                    initial={{ filter: "blur(10px)" }}
+                                    whileInView={{ filter: "blur(0px)" }}
                                     viewport={{ once: true }}
-                                    transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                                    transition={{ duration: 1, ease: "easeInOut" }}
                                     style={id === 2 ? getDynamicStyle(800, -600) : getDynamicStyle(500, -300)}
                                     className={`stickImgs ${id === 2 ? "stick2" : ""}${id === 3 ? "stick3" : ""}`}
                                     src={src}

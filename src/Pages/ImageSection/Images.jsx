@@ -62,9 +62,9 @@ const Images = () => {
                             onMouseLeave={(e) => handleMouseLeave(e, id)}
                         >
                             <motion.img
-                                initial={{ filter: "blur(20px) opacity(0)" }}
-                                whileInView={{ filter: "blur(0px) opacity(1)" }}
-                                transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                                initial={{ filter: "blur(10px)" }}
+                                whileInView={{ filter: "blur(0px)" }}
+                                transition={{ duration: 1, ease: "easeInOut" }}
                                 viewport={{ once: true }}
                                 className={`${id === 5 ? "scaledImage" : "image"}`}
                                 src={images}

@@ -34,7 +34,7 @@ const LastSection = () => {
                 initial={{ filter: "blur(10px) opacity(0.3)" }}
                 whileInView={{ filter: "blur(0px) opacity(1)" }}
                 viewport={{ once: true }}
-                transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                transition={{ duration: 1, ease: "easeInOut" }}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
                 className="lastWrapper"

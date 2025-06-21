@@ -49,9 +49,9 @@ const ForthSection = () => {
                 <motion.div className="leftImgWrapper" style={getDynamicStyle(200, -100)} >
                     <img className="fara" src={fara} loading="lazy" />
                     <img className="gach" src={gach} loading="lazy" />
-                    <motion.img initial={{ filter: "blur(10px)" }} viewport={{ once: true }} whileInView={{ filter: "blur(0)" }} transition={{ duration: 1, ease: "all 0.5s cubic-bezier(0.22, 1, 0.36, 1)" }} className="crap" src={crap} loading="lazy" />
+                    <motion.img initial={{ filter: "blur(10px)" }} viewport={{ once: true }} whileInView={{ filter: "blur(0)" }} transition={{ duration: 1, ease: "easeInOut" }} className="crap" src={crap} loading="lazy" />
                 </motion.div>
-                <motion.img initial={{ filter: "sepia(1) blur(10px)" }} transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }} viewport={{ once: true }} whileInView={{ filter: "sepia(0) blur(0px)" }} style={getDynamicStyle(400, -300)} className="forthHell" src={forthHell} loading="lazy" />
+                <motion.img initial={{ filter: "sepia(1) blur(10px)" }} transition={{ duration: 1, ease: "easeInOut" }} viewport={{ once: true }} whileInView={{ filter: "sepia(0) blur(0px)" }} style={getDynamicStyle(400, -300)} className="forthHell" src={forthHell} loading="lazy" />
                 <motion.div style={getDynamicStyle(-50, 200)}>
                     <img className="img1" src={img1} loading="lazy" />
                 </motion.div>
@@ -68,9 +68,9 @@ const ForthSection = () => {
                 />
             </div>
             <motion.img
-                initial={{ filter: "blur(20px)" }}
+                initial={{ filter: "blur(10px)" }}
                 whileInView={{ filter: "blur(0px)" }}
-                transition={{ duration: 0.6, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
+                transition={{ duration: 0.6, ease: "easeInOut" }}
                 viewport={{ once: true }}
                 style={getDynamicStyle(-400, 0)} className="hand" src={hand} loading="lazy" />
         </section>
