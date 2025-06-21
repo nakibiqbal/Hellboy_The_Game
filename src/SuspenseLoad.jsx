@@ -9,8 +9,8 @@ export default function SuspenseLoad() {
                 alignItems: 'center',
                 backgroundColor: 'black',
                 fontSize: '24px',
-                color: '#555',
-                fontFamily: 'Arial, sans-serif',
+                color: '#ED1D24',
+                fontFamily: 'sans-serif',
             }}
         >
             <h1>Loading...</h1>
