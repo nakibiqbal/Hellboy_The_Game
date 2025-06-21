@@ -29,21 +29,21 @@ const Home = () => {
             <div className="overlayShadow">
                 <div className="homeContent">
                     <div className="homeWrapper">
-                        <img className="hellBoy" src={hellboyImg} />
+                        <img className="hellBoy" src={hellboyImg} loading="lazy" />
                         <p className="platforms">Out now on all platforms!</p>
                         <Button src={button} btnText=" BUY NOW!" />
                         <div className="Cimages">
-                            <img src={ps} />
-                            <img src={xBox} />
-                            <img src={pcImg} />
-                            <img src={switchImg} />
+                            <img src={ps} loading="lazy" />
+                            <img src={xBox} loading="lazy" />
+                            <img src={pcImg} loading="lazy" />
+                            <img src={switchImg} loading="lazy" />
                         </div>
                     </div>
                 </div>
             </div>
             <a href="#" className="scroll" style={{ backgroundImage: `url(${circle})` }} >
-                <img className="rotate" src={scroll} />
-                <img className="rotate" src={exclamat} />
+                <img className="rotate" src={scroll} loading="lazy" />
+                <img className="rotate" src={exclamat} loading="lazy" />
             </a>
         </motion.section>
 

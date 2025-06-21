@@ -8,7 +8,7 @@ const CommonText2 = ({ style, className, heading, heading2, paragraph, src, bord
         <motion.div initial={{ opacity: 0 }}
             transition={{ duration: 1, ease: "all 0.5s cubic-bezier(0.22, 1, 0.36, 1)" }}
             whileInView={{ opacity: 1 }} style={style} className={`${className ? `butterflyHouse ${className}` : `butterflyHouse`}`}>
-            {src && <img src={src} />}
+            {src && <img src={src} loading="lazy" />}
             {heading && <h3>{heading}</h3>}
             {heading2 && <h4>{heading2}</h4>}
             {diamond && <span className={diamond}></span>}

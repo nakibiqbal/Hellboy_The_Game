@@ -69,6 +69,7 @@ const Images = () => {
                                 className={`${id === 5 ? "scaledImage" : "image"}`}
                                 src={images}
                                 alt={`Image ${id}`}
+                                loading="lazy"
                             />
                         </div>
                     );
@@ -77,7 +78,7 @@ const Images = () => {
             <div className="absoluteStuffs">
                 {abImages.map(abImg => {
                     const { images, className, id } = abImg;
-                    return <img key={id} className={className} src={images} />;
+                    return <img key={id} className={className} src={images} loading="lazy" />;
                 })}
             </div>
         </section>

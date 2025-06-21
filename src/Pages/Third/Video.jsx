@@ -23,7 +23,7 @@ const Video = () => {
     return (
         <section
             id="videoSection">
-            <img src={videoBg} className="videoBorder" alt="Video Border" />
+            <img src={videoBg} loading="lazy" className="videoBorder" alt="Video Border" />
 
             {/* Always render the iframe */}
             <iframe

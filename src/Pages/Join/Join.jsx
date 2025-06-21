@@ -26,7 +26,7 @@ const Join = () => {
                         transition: "transform 0.2s ease-out", // Smooth effect on reset
                     }}
                 >
-                    <img className="leftShit" src={leftShift} alt="Left Decoration" />
+                    <img className="leftShit" loading="lazy" src={leftShift} alt="Left Decoration" />
                     <CommonDiv
                         className="zIndex"
                         span="J"
@@ -38,11 +38,11 @@ const Join = () => {
                         src2={buttonRed}
                         src3={button}
                     />
-                    <img className="rightShit" src={rightShift} alt="Right Decoration" />
+                    <img className="rightShit" loading="lazy" src={rightShift} alt="Right Decoration" />
                 </div>
 
                 <div className="joinImg animatable" style={{ transition: "transform 0.2s ease-out" }}>
-                    <img src={joinImg} alt="Join Image" />
+                    <img loading="lazy" src={joinImg} alt="Join Image" />
                 </div>
             </div>
         </section>

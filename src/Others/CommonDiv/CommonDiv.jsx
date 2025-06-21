@@ -25,7 +25,7 @@ const CommonDiv = ({
             style={style}
             className={`${className ? `ancient ${className}` : "ancient"}`}
         >
-            {src && <img className="shadow" src={src} alt="Shadow" />}
+            {src && <img className="shadow" src={src} alt="Shadow" loading="lazy" />}
             <h1>
                 {span && <span>{span}</span>}{head1}
             </h1>

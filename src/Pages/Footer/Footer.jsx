@@ -1,5 +1,5 @@
-import CommonText2 from "../../Others/CommonText2/CommonText2"
 import { FaTwitter, FaInstagram, FaDiscord, FaFacebookF, FaReddit } from "react-icons/fa";
+import CommonText2 from "../../Others/CommonText2/CommonText2"
 
 import "./Footer.css"
 
@@ -33,9 +33,9 @@ const Footer = () => {
                                 </p>
                             </div>
                             <div className="footerImgs">
-                                <img src={arcade} />
-                                <img src={horse} />
-                                <img src={good} />
+                                <img src={arcade} loading="lazy" />
+                                <img src={horse} loading="lazy" />
+                                <img src={good} loading="lazy" />
                             </div>
                         </div>
 
@@ -83,7 +83,7 @@ const Footer = () => {
 
                 <div style={{ width: "100%", paddingBottom: "2rem" }} className="footerLinks">
                     <a href="#">WEBSITE BY PSYCHOATIVE STUDIOS</a>
-                    <a href="#">CLONE BY NAKIB IQBAL</a>
+                    <a href="https://nakibiqbal.vercel.app/" target="_blank">CLONE BY NAKIB IQBAL</a>
                 </div>
 
             </div>

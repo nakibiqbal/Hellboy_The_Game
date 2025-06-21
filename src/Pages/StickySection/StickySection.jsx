@@ -15,7 +15,7 @@ import crown from "../../assets/crown.webp";
 
 const StickySection = () => {
     const stickySection = useRef(null);
-    const isLargeScreen = useScreenSize()
+    const isLargeScreen = useScreenSize();
     const y = useScrollTransform(stickySection);
     const { handleMouseMoveSection, handleMouseLeaveSection } = useHoverEffect(100);
 
@@ -49,7 +49,7 @@ const StickySection = () => {
 
     return (
         <section
-            onMouseMove={handleMouseMoveSection} // Attach event listeners to the section
+            onMouseMove={handleMouseMoveSection}
             onMouseLeave={handleMouseLeaveSection}
             ref={stickySection}
             id="StickySection"
@@ -62,7 +62,9 @@ const StickySection = () => {
                             whileInView={{ filter: "brightness(1)" }}
                             viewport={{ once: true }}
                             transition={{ duration: 3, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                            src={fox} />
+                            src={fox}
+                            loading="lazy"
+                        />
                     </div>
                     <div className="foxCircleContent2 animatable">
                         <motion.img
@@ -70,7 +72,9 @@ const StickySection = () => {
                             whileInView={{ filter: "blur(0px)" }}
                             viewport={{ once: true }}
                             transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                            src={gol} />
+                            src={gol}
+                            loading="lazy"
+                        />
                     </div>
                 </div>
             </div>
@@ -95,9 +99,10 @@ const StickySection = () => {
                                     whileInView={{ filter: "blur(0px) opacity(1)" }}
                                     viewport={{ once: true }}
                                     transition={{ duration: 1, ease: "cubic-bezier(0.22, 1, 0.36, 1)" }}
-                                    style={id === 2 ? getDynamicStyle(800, -600) : getDynamicStyle(500, -300)} // Apply dynamic styles here
+                                    style={id === 2 ? getDynamicStyle(800, -600) : getDynamicStyle(500, -300)}
                                     className={`stickImgs ${id === 2 ? "stick2" : ""}${id === 3 ? "stick3" : ""}`}
                                     src={src}
+                                    loading="lazy"
                                 />
                                 <CommonText2 className="uniq" heading2={heading2} paragraph={paragraph} />
                             </div>

@@ -2,9 +2,9 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import "./SecondSection.css";
 
-import shadow from "../../assets/shadow.webp"
-import secondBg from "../../assets/secondBg.png"
-import boy from "../../assets/boy.webp"
+import shadow from "../../assets/shadow.webp";
+import secondBg from "../../assets/secondBg.png";
+import boy from "../../assets/boy.webp";
 
 import CommonDiv from "../../Others/CommonDiv/CommonDiv";
 import CommonText from "../../Others/CommonText/CommonText";
@@ -14,11 +14,11 @@ import useScrollTransform from "../../Others/UseScrollTransform/useScrollTransfo
 const SecondSection = () => {
     const section2 = useRef(null);
     const isLargeScreen = useScreenSize();
-    const y = useScrollTransform(section2)
+    const y = useScrollTransform(section2);
 
     // Function to generate dynamic styles
     const getDynamicStyle = (start, end) => {
-        const yTransform = y(start, end)
+        const yTransform = y(start, end);
         return isLargeScreen
             ? { y: yTransform, transition: "all 0.5s cubic-bezier(0.22, 1, 0.36, 1)" }
             : {};
@@ -37,7 +37,7 @@ const SecondSection = () => {
                 />
             </div>
             {/* Background Image */}
-            <img className="sec2bg" src={secondBg} alt="Background" />
+            <img className="sec2bg" src={secondBg} alt="Background" loading="lazy" />
 
             <div className="two2">
                 <CommonDiv
@@ -61,6 +61,7 @@ const SecondSection = () => {
                     className="boy"
                     src={boy}
                     alt="Boy"
+                    loading="lazy"
                 />
             </div>
         </section>

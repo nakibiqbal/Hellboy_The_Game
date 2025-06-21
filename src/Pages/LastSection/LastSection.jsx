@@ -41,13 +41,13 @@ const LastSection = () => {
             >
                 <div className="last1">
                     <div className="lastImg1 animate">
-                        <img src={hellLast} />
+                        <img src={hellLast} loading="lazy" />
                     </div>
                     <div className="lastImg2 animate">
-                        <img src={gotoHell} />
+                        <img src={gotoHell} loading="lazy" />
                     </div>
                 </div>
-                <img className='lastHellBoy' src={hellBoyImg} />
+                <img className='lastHellBoy' src={hellBoyImg} loading="lazy" />
             </motion.div>
         </section>
     )
